@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mozzafiato</title>
+	<link rel="icon" href="https://4.bp.blogspot.com/--a6B9H_pIxI/Wfj8iJPK6JI/AAAAAAAAXng/-wsvI4jZnGoxPOwCWxUQL1xWi5G9OEEsACLcBGAs/s1600/Moscow-metro-logo.svg.png"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style>
+	html{font-family:Monaco; color: white; background-color: black;}	
+	.menu {text-align:center;padding:20px; position:fixed; overflow:hidden; top:0; width:100%;background-color:black;}
+	.menu a{ text-decoration:none; color:white; font-size:50px;padding:9px 50px; float:left; display:block; text-align:center;}
+	.menu a:hover{ background-color:white;color:black; font-size:60px; padding:9px 50px;}
+	.menu a:active{border-bottom:2px solid;}
+	
+	.chef{position: absolute; right:-0px; height:100%; top:125px;  }
+	
+	.formulario{position:absolute;margin-top:160px;margin-left:50px; text-align:center; width:600px; color:white;}
+	
+	#alerta {display:none; position:absolute; margin-top:250px; margin-left:400px;}
+	</style>
+	<script>
+	function mostrar() {
+    var x = document.getElementById('alerta');
+    if (window.getComputedStyle(x).display=== 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+	</script>
+</head>
+
+<body>
+	<img src="https://i0.wp.com/paynespizzas.com/wp-content/uploads/2020/09/chef-1.png?w=1080&ssl=1" class="chef">
+	
+	<section class="formulario">
+		<h1 class="display-5">¡No te puedes perder la experiencia Mozzafiato! ¡Reserva ya!</h1>
+		<form class="row g-3" style="padding:20px;">
+			  <div class="col-md-6">
+				<label for="inputName" class="form-label">Nombre</label>
+				<input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
+			  </div>
+			  <div class="col-md-6">
+				<label for="inputSurname" class="form-label">Apellidos</label>
+				<input type="text" class="form-control" id="inputSurname" placeholder="Apellidos" required>
+			  </div>
+			  <div class="col-md-9">
+				<label for="inputEmail4" class="form-label">Email</label>
+				<input type="email" class="form-control" id="inputEmail4" placeholder="e-mail" required>
+			  </div>
+			  <div class="col-md-3">
+				<label for="inputPhone" class="form-label">Teléfono</label>
+				<input type="tel" class="form-control" id="inputTel" placeholder="Teléfono" required>
+			  </div>
+			 <div class="col-md-2">
+				<label for="inputPeople" class="form-label">Personas</label>
+				<select id="inputPeople" class="form-select">
+				  <option selected>1</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5</option>
+				  <option>6</option>
+				</select>
+			  </div>
+			  <div class="col-md-4">
+				<label for="inputDate" class="form-label">Fecha</label>
+				<input type="date" class="form-control" id="inputDate" required>
+			  </div>
+
+			  <div class="col-md-2">
+				<label for="inputHour" class="form-label">Hora</label>
+				<input type="time" class="form-control" id="inputHour" required>
+			  </div>
+			 <div class="col-md-4">
+				<label for="inputRestaurant" class="form-label">Restaurante</label>
+				<select id="inputResaturant" class="form-select">
+				  <option>Velázquez</option>
+				  <option>Las Tablas</option>
+				  <option>La Moraleja Green</option>
+				  <option>Avenida de Europa</option>
+				</select>
+			  </div>
+			  <div class="col-6">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" id="gridCheck">
+				  <label class="form-check-label" for="gridCheck">Deseo recibir promociones</label>
+				</div>
+			  </div>
+			  <div class="col-12">
+				<button type="submit" class="btn btn-secondary" onClick="mostrar()">Reservar</button>
+			  </div>
+			</form>
+	</section>
+	
+	<div class="alert alert-success" role="alert" id="alerta" >
+		<h4 class="alert-heading">Su reserva ha sido enviada</h4>
+		<p>Recibirá un e-mail y un SMS con el código de su reserva. </p>
+		<hr>
+		<p class="mb-0">Por favor, no olvide cancelar en caso de que no pueda asistir.</p>
+		<button type="button" style="float:right;" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+	
+	<header>
+		<nav class="menu">
+			<ul>
+				<li class="column" style="list-style:none;"><a class="active" href="Practica2.html">Inicio</a></li>
+				<li class="column" style="list-style:none;"><a href="carta.html">Carta</a></li>
+				<li class="column" style="list-style:none;"><a href="reservas.html">Reservar</a></li>
+				<li class="column" style="list-style:none;"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav> 
+	</header>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
