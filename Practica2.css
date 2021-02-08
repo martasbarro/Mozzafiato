@@ -1,0 +1,114 @@
+	html{
+		background-color: black;
+	}
+	
+	.menu {
+		text-align:center;
+		padding:20px; 
+		position:fixed; 
+		overflow:hidden; 
+		top:0; 
+		width:100%;
+		background-color: black;
+	}
+	
+	.menu a{ 
+		text-decoration:none; 
+		color:white; 
+		font-size:50px;
+		padding:9px 50px; 
+		float:left; 
+		display:block; 
+		text-align:center;
+	}
+	
+	.menu a:hover{ 
+		background-color:white;
+		color:black; 
+		font-size:60px; 
+		padding:9px 50px;
+	}
+	
+	.menu a:active{
+		border-bottom:2px solid;
+	}
+	
+	.main{
+		background-image: url('https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2765%2Ftrend20200320082524.jpg'); 
+		background-repeat:no-repeat; 
+		background-size:100% 100%; 
+		margin-top:160px; 
+		padding:200px; 
+		color:white;
+	}
+	
+	.subtitle {
+		background-color:black; 
+		color:white; 
+		padding:50px;
+	}
+
+	.table-photo{ 
+		padding: 100px; 
+		width:50%;
+	}
+	
+	.table-photo a{
+		text-decoration:none; 
+		color:white; 
+		font-size:30px;
+		text-align:center;
+	}
+		
+	.table-photo a:hover{
+		border-bottom:2px solid;
+	}
+	
+	.dish{
+		position: absolute;  
+		height:100%;  
+	}
+	
+	.carta{ 
+		position:absolute;
+		margin-top:160px;
+		margin-left:500px; 
+		text-align:center; 
+		width:600px; 
+		color:white;
+	}
+	
+	
+	.chef{
+		position: absolute; 
+		right:-0px; 
+		height:100%; 
+		top:125px;  
+	}
+	
+	.formulario{
+		position:absolute;
+		margin-top:160px;
+		margin-left:50px; 
+		text-align:center; 
+		width:600px; 
+		color:white;
+	}
+	
+	#alerta {
+		display:none; 
+		position:absolute; 
+		margin-top:250px; 
+		margin-left:400px;
+	}
+	
+	.contacto {
+		position:absolute;
+		margin-top:150px; 
+		margin-left:25%; 
+		width=50%;
+		color:white; 
+	}
+
+	
+	
